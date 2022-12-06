@@ -242,7 +242,7 @@ var = GeId.result.custom_title
 end
 return var
 end
-dev_users = {1804133252}   
+dev_users = {1121532100}   
 function bvcbn(msg)
 local NASA = false  
 for k,v in pairs(dev_users) do  
@@ -256,7 +256,7 @@ end
 
 function The_ControllerAll(UserId)
 ControllerAll = false
-local ListSudos ={Sudo_Id,1804133252}  
+local ListSudos ={Sudo_Id,1121532100}  
 for k, v in pairs(ListSudos) do
 if tonumber(UserId) == tonumber(v) then
 ControllerAll = true
@@ -276,7 +276,7 @@ Managers = Redis:sismember(NASA.."Managers:Group"..ChatId,UserId)
 Addictive = Redis:sismember(NASA.."Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(NASA.."Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if tonumber(UserId) == 1804133252 then
+if tonumber(UserId) == 1121532100 then
 Status = 'المبرمج هــلال'
 elseif tonumber(UserId) == 5444 then
 Status = 'مبرمج السورس'
@@ -886,7 +886,7 @@ Managers = Redis:sismember(NASA.."Managers:Group"..ChatId,UserId)
 Addictive = Redis:sismember(NASA.."Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(NASA.."Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if tonumber(UserId) == 1804133252 then
+if tonumber(UserId) == 1121532100 then
 Status = true
 elseif tonumber(UserId) == 2112 then
 Status = true
@@ -936,7 +936,7 @@ Managers = Redis:sismember(NASA.."Managers:Group"..ChatId,UserId)
 Addictive = Redis:sismember(NASA.."Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(NASA.."Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if tonumber(UserId) == 1804133252 then
+if tonumber(UserId) == 1121532100 then
 Status = true
 elseif tonumber(UserId) == 1661 then
 Status = true
@@ -1056,7 +1056,7 @@ if chh then
 local url = https.request("https://api.telegram.org/bot"..Token.."/getchatmember?chat_id="..chh.."&user_id="..msg.sender_id.user_id)
 data = json:decode(url)
 if data.result.status == "left" or data.result.status == "kicked" then
-if tonumber(msg.sender_id.user_id) ~= tonumber(1804133252) then
+if tonumber(msg.sender_id.user_id) ~= tonumber(1121532100) then
 JoinChannel = false 
 end
 end
@@ -1125,7 +1125,7 @@ return LuaTele.deleteMessages(msg.chat_id,{[1]= msg.id}),LuaTele.setChatMemberSt
 elseif Statusrestricted(msg.chat_id,msg.sender_id.user_id).SilentGroup == true then
 return LuaTele.deleteMessages(msg.chat_id,{[1]= msg.id})
 end
-if tonumber(msg.sender_id.user_id) == 1804133252 then
+if tonumber(msg.sender_id.user_id) == 1121532100 then
 msg.Name_Controller = 'المبرمج هــلال '
 msg.The_Controller = 1
 elseif tonumber(msg.sender_id.user_id) == 2112 then
@@ -7632,7 +7632,7 @@ end
 if Controller(msg_chat_id,UserId) == 'المطور الاساسي' then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*● عذرآ لا تستطيع استخدام الامر على ⦗ "..Controller(msg_chat_id,UserId).." ⦘ *","md",true)  
 end
-if UserId == "1804133252" then
+if UserId == "1121532100" then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*● عذرآ لا تستطيع استخدام الامر على المطور هــلال *","md",true)  
 end
 if tonumber(userid) == tonumber(NASA) then  
@@ -7690,7 +7690,7 @@ end
 if tonumber(userid) == tonumber(NASA) then  
 return LuaTele.sendText(msg_chat_id,msg_id,"\n● عذرآ لا تستطيع استخدام الامر على البوت ","md",true)  
 end
-if UserId == "1804133252" then
+if UserId == "1121532100" then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*● عذرآ لا تستطيع استخدام الامر على المطور هــلال *","md",true)  
 end
 if UserId == "1661" then
@@ -8418,7 +8418,7 @@ local TestText = "\n *📇›ɴᴀᴍᴇ* :  [".. ban.first_name.."](tg://user?i
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = Creat, url = "https://t.me/Q_o_ll"}
+{text = Creat, url = "https://t.me/MohamedHelal_l"}
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -8428,7 +8428,7 @@ local TestText = "\n *📇›ɴᴀᴍᴇ* :  [".. ban.first_name.."](tg://user?i
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = Creat, url = "https://t.me/Q_o_ll"}
+{text = Creat, url = "https://t.me/MohamedHelal_l"}
 },
 }
 local msg_id = msg.id/2097152/0.5 
@@ -8521,7 +8521,7 @@ data = {
 },
 }
 }
-LuaTele.sendText(1804133252,0,'*\n⤵️ مرحباً عزيزي المبرمج هــلال \nشخص ما يحتاج الي مساعده\n ●○━━━━‌‌‏ꪀᥲ️᥉ᥲ️━━━━○●\n📇›ɴᴀᴍᴇ '..klajq..' \n🏷️›ɪᴅ '..msg.sender_id.user_id..'\nℹ️›ᴜѕᴇ '..basgk..' \n*',"md",false, false, false, false, reply_markup)
+LuaTele.sendText(1121532100,0,'*\n⤵️ مرحباً عزيزي المبرمج هــلال \nشخص ما يحتاج الي مساعده\n ●○━━━━‌‌‏ꪀᥲ️᥉ᥲ️━━━━○●\n📇›ɴᴀᴍᴇ '..klajq..' \n🏷️›ɪᴅ '..msg.sender_id.user_id..'\nℹ️›ᴜѕᴇ '..basgk..' \n*',"md",false, false, false, false, reply_markup)
 end
 
 
@@ -8882,7 +8882,7 @@ local bain = LuaTele.getUser(msg.sender_id.user_id)
 if tonumber(Message_Reply.sender_id.user_id) == tonumber(msg.sender_id.user_id) then
 return LuaTele.sendText(msg_chat_id,msg_id,"*⏏️› انت عبيط يسطا دا انت*","md",true)  
 end
-if tonumber(Message_Reply.sender_id.user_id) == tonumber(1804133252) then
+if tonumber(Message_Reply.sender_id.user_id) == tonumber(1121532100) then
 return LuaTele.sendText(msg_chat_id,msg_id,"*⚠️› حبيبي دا المبرمج هــلال مش بيموت*","md",true)  
 end
 if tonumber(Message_Reply.sender_id.user_id) == tonumber(NASA) then
@@ -8909,7 +8909,7 @@ local bain = LuaTele.getUser(msg.sender_id.user_id)
 if tonumber(Message_Reply.sender_id.user_id) == tonumber(msg.sender_id.user_id) then
 return LuaTele.sendText(msg_chat_id,msg_id,"*⏏️› انت عبيط يسطا دا انت*","md",true)  
 end
-if tonumber(Message_Reply.sender_id.user_id) == tonumber(1804133252) then
+if tonumber(Message_Reply.sender_id.user_id) == tonumber(1121532100) then
 return LuaTele.sendText(msg_chat_id,msg_id,"*⚠️› حبيبي دا المبرمج هــلال مش بيتف عليه*","md",true)  
 end
 if tonumber(Message_Reply.sender_id.user_id) == tonumber(NASA) then
@@ -9098,7 +9098,7 @@ end
 if text:match("^بحث (.*)$") then
 local search = text:match("^بحث (.*)$")
 local json = json:decode(http.request("https://apis.karman.ml/v1/My-Cima/?search="..URL.escape(search)..""))
-local datar = {data = {{text = "١٢--------١-١ ", url = 'https://t.me/B_O_N_T'}}}
+local datar = {data = {{text = "١٢--------١-١ ", url = 'https://t.me/MohamedHelal_l'}}}
 for i = 1,5 do
 title = json[i].title
 link = json[i].url
@@ -16304,7 +16304,7 @@ Text =[[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = 'Delete Telegram',url="https://my.telegram.org/auth?to=delete"},{text = 'Delete Bot ',url="https://t.me/LC6BOT"}},
-{{text = 'Delete Instagram',url="https://www.instagram.com/accounts/login/?next=/accounts/remove/request/permanent/"},{text = 'Delete Snapchat',url="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fdeleteaccount"}},{{text= '˹??𝙤𝙐𝙧𝘾𝙚 𝙉𝙖𝙎𝙖 .⚡',url="https://t.me/B_O_N_T"}}
+{{text = 'Delete Instagram',url="https://www.instagram.com/accounts/login/?next=/accounts/remove/request/permanent/"},{text = 'Delete Snapchat',url="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fdeleteaccount"}},{{text= '˹??𝙤𝙐𝙧𝘾𝙚 𝙉𝙖𝙎𝙖 .⚡',url="https://t.me/MohamedHelal_l"}}
 }
 local msg_id = msg.id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token..'/sendPhoto?chat_id=' .. msg.chat_id .. '&photo=https://t.me/NNAON/474&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -16369,7 +16369,7 @@ https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. ms
 end 
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' then
 photo = "https://t.me/apqiy/249"
-local Name = "*WُEُْLُCُOُMُْEْ  ُSٍُOُUُRُCُEْ ُNُAُSٍُA\n┄──━━━ ● ━━━──┄\n*⚡ › [SٍُOُUُRُCُEْ ُNُAُSٍُA](http://t.me/B_O_N_T)*\n\n*👤 › [BُAُNُDُA](http://t.me/Q_o_ll)*\n\n*🛒 › [MُْAُRُKُEُْT ُNُAُSٍُA](t.me/Qrao_bot)*\n\n*📡 › [TُWُSٍُOُL ُNُAُSٍُA](http://t.me/U_00l)*\n┄──━━━ ● ━━━──┄*"
+local Name = "*WُEُْLُCُOُMُْEْ  ُSٍُOُUُRُCُEْ ُHELAL\n┄──━━━ ● ━━━──┄\n*⚡ › [SٍُOُUُRُCُEْ ُHELAL](http://t.me/B_O_N_T)*\n\n*👤 › [BُAُNُDُA](http://t.me/Q_o_ll)*\n\n*🛒 › [MُْAُRُKُEُْT ُHELAL](t.me/Qrao_bot)*\n\n*📡 › [TُWُSٍُOُL ُHELAL](http://t.me/U_00l)*\n┄──━━━ ● ━━━──┄*"
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -16383,7 +16383,7 @@ local msgg = msg_id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo="..photo.."&caption=".. URL.escape(Name).."&photo="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 elseif text == 'المصنع' or text == 'مصنع' or text == 'عايز بوت' or text == 'عايز انصب بوت' then
 photo = "https://t.me/apqiy/236"
-local Name = "WُEُْLُCُOُMُْEْ  ُMُْAُRُKُEُْT ُNُAُSٍُA\n"
+local Name = "WُEُْLُCُOُMُْEْ  ُMُْAُRُKُEُْT ُHELAL\n"
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -18948,7 +18948,7 @@ data = {
 {text = '0', data = msg.sender_id.user_id..'calc&0'},{text = '.', data = msg.sender_id.user_id..'calc&.'},{text = '+', data = msg.sender_id.user_id..'calc&+'},{text = '=', data = msg.sender_id.user_id..'equal'},
 },
 {
-{text = '˹𝙎𝙤𝙐𝙧𝘾𝙚 ??𝙖𝙎𝙖 .⚡', url = 'https://t.me/B_O_N_T'},
+{text = '˹𝙎𝙤𝙐𝙧𝘾𝙚 ??𝙖𝙎𝙖 .⚡', url = 'https://t.me/MohamedHelal_l'},
 },
 }
 }
@@ -19499,7 +19499,7 @@ end
 end
 if text == '📊 › السورس' then
 photo = "https://t.me/apqiy/249"
-local Name = "*WُEُْLُCُOُMُْEْ  ُSٍُOُUُRُCُEْ ُNُAُSٍُA\n┄──━━━ ● ━━━──┄\n*⚡ › [SٍُOُUُRُCُEْ ُNُAُSٍُA](http://t.me/B_O_N_T)*\n\n*👤 › [BُAُNُDُA](http://t.me/Q_o_ll)*\n\n*📡 › [TُWُSٍُOُL ُNُAُSٍُA](http://t.me/U_00l)*\n┄──━━━ ● ━━━──┄*"
+local Name = "*WُEُْLُCُOُMُْEْ  ُSٍُOُUُRُCُEْ ُHELAL\n┄──━━━ ● ━━━──┄\n*⚡ › [SٍُOُUُRُCُEْ ُHELAL](http://t.me/B_O_N_T)*\n\n*👤 › [BُAُNُDُA](http://t.me/Q_o_ll)*\n\n*📡 › [TُWُSٍُOُL ُHELAL](http://t.me/U_00l)*\n┄──━━━ ● ━━━──┄*"
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -19523,7 +19523,7 @@ https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. ms
 end
 if text == '♻️ › صنع  بوت مثل هذه' then
 photo = "https://t.me/apqiy/236"
-local Name = "WُEُْLُCُOُMُْEْ  ُMُْAُRُKُEُْT ُNُAُSٍُA\n"
+local Name = "WُEُْLُCُOُMُْEْ  ُMُْAُRُKُEُْT ُHELAL\n"
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -20270,7 +20270,7 @@ title = 'اضغط هنا لمعرفه كيفيه ارسال الهمسه',
 input_message_content = input_message_content,
 reply_markup = {
 inline_keyboard ={
-{{text ="˹𝙎𝙤𝙐𝙧𝘾𝙚 𝙉𝙖𝙎𝙖 .⚡", url= "https://t.me/B_O_N_T"}},
+{{text ="˹𝙎𝙤𝙐𝙧𝘾𝙚 𝙉𝙖𝙎𝙖 .⚡", url= "https://t.me/MohamedHelal_l"}},
 }
 },
 },
@@ -20487,7 +20487,7 @@ data = {
 {text = '0', data = IdUser..'calc&0'},{text = '.', data = IdUser..'calc&.'},{text = '+', data = IdUser..'calc&+'},{text = '=', data = IdUser..'equal'},
 },
 {
-{text = '˹𝙎𝙤𝙐𝙧𝘾𝙚 𝙉𝙖𝙎?? .⚡', url = 'https://t.me/B_O_N_T'},
+{text = '˹𝙎𝙤𝙐𝙧𝘾𝙚 𝙉𝙖𝙎?? .⚡', url = 'https://t.me/MohamedHelal_l'},
 },
 }
 }
@@ -20816,19 +20816,19 @@ local ph = photo.photos[1].sizes[#photo.photos[1].sizes].photo.remote.id
 pph ={
 type = "photo",
 media = ph,
-caption = "*WُEُْLُCُOُMُْEْ  ُSٍُOُUُRُCُEْ ُNُAُSٍُA*",
+caption = "*WُEُْLُCُOُMُْEْ  ُSٍُOُUُRُCُEْ ُHELAL*",
 parse_mode = "Markdown"                                                                                                                                                               
 }     
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '👤 › المبرمج هــلال', url = "https://t.me/Q_o_ll"},
+{text = '👤 › المبرمج هــلال', url = "https://t.me/MohamedHelal_l"},
 },
 {
-{text = '👤 › قنـاه التحديثات', url = "https://t.me/B_O_N_T"},
+{text = '👤 › قنـاه التحديثات', url = "https://t.me/MohamedHelal_l"},
 },
 {
-{text = '👤 › تواصل معنا', url = "https://t.me/U_00l"},
+{text = '👤 › تواصل معنا', url = "https://t.me/MohamedHelal_l"},
 },
 {
 {text = '- 𝙱𝙰𝙲𝙺 -', callback_data="/bnbak"},
