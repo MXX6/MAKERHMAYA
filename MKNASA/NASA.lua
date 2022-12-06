@@ -16368,12 +16368,12 @@ local msgg = msg_id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo="..photo.."&caption=".. URL.escape(Name).."&photo="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end 
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' then
-photo = "https://t.me/apqiy/249"
-local Name = "*WُEُْLُCُOُMُْEْ  ُSٍُOُUُRُCُEْ ُHELAL\n┄──━━━ ● ━━━──┄\n*⚡ › [SٍُOُUُRُCُEْ ُHELAL](http://t.me/B_O_N_T)*\n\n*👤 › [BُAُNُDُA](http://t.me/Q_o_ll)*\n\n*🛒 › [MُْAُRُKُEُْT ُHELAL](t.me/Qrao_bot)*\n\n*📡 › [TُWُSٍُOُL ُHELAL](http://t.me/U_00l)*\n┄──━━━ ● ━━━──┄*"
+photo = "https://t.me/M_O_D_Y_CH/5961"
+local Name = "*WُEُْLُCُOُMُْEْ  ُSٍُOُUُRُCُEْ ُHELAL\n┄──━━━ ● ━━━──┄\n*⚡ › [SٍُOُUُRُCُEْ ُHELAL](http://t.me/MohamedHelal_l)*\n\n*👤 › [HELAL](http://t.me/MohamedHelal_l)*\n\n*🛒 › [MُْAُRُKُEُْT ُHELAL](t.me/MohamedHelal_l)*\n\n*📡 › [TُWُSٍُOُL ُHELAL](http://t.me/MohamedHelal_l)*\n┄──━━━ ● ━━━──┄*"
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '☢️ › إضغط هنا لتنصيب بوتك', url = 't.me/Qrao_bot?start'}
+{text = '☢️ › إضغط هنا لتنصيب بوتك', url = 't.me/tstoty_bot?start'}
 },
 {
 {text = 'اضف البوت الي مجموعتك✅', url = 't.me/'..UserBot..'?startgroup=new'}
@@ -16382,12 +16382,12 @@ keyboard.inline_keyboard = {
 local msgg = msg_id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo="..photo.."&caption=".. URL.escape(Name).."&photo="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 elseif text == 'المصنع' or text == 'مصنع' or text == 'عايز بوت' or text == 'عايز انصب بوت' then
-photo = "https://t.me/apqiy/236"
+photo = "https://t.me/M_O_D_Y_CH/5961"
 local Name = "WُEُْLُCُOُMُْEْ  ُMُْAُRُKُEُْT ُHELAL\n"
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '☢️ › إضغط هنا لتنصيب بوتك', url = 't.me/Qrao_bot?start'}
+{text = '☢️ › إضغط هنا لتنصيب بوتك', url = 't.me/tstoty_bot?start'}
 },
 {
 {text = 'اضف البوت الي مجموعتك✅', url = 't.me/'..UserBot..'?startgroup=new'}
