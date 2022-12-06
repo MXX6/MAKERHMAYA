@@ -1,5 +1,8 @@
 --[[
-♬ ســ͢ــــورس لـــ͢ـــولـــ͢ـــيــــ͢ـــتـــ͢ــــا ♬
+
+
+
+
 --]]
 URL     = require("./libs/url")
 JSON    = require("./libs/dkjson")
@@ -47,14 +50,14 @@ end
 os.execute('lua NASA.lua')
 end
 if not Redis:get(SshId.."Info:Redis:User") then
-io.write('\27[1;31mارسل يوزر المطور الاساسي الان \nDeveloper UserName saved ↡\n\27[0;39;49m')
+io.write('\27[1;31mارسل معرف المطور الاساسي الان \nDeveloper UserName saved ↡\n\27[0;39;49m')
 local UserSudo = io.read():gsub('@','')
 if UserSudo ~= '' then
-io.write('\n\27[1;34mتم حفظ يوزر المطور \nDeveloper UserName saved \n\n\27[0;39;49m')
+io.write('\n\27[1;34mتم حفظ معرف المطور \nDeveloper UserName saved \n\n\27[0;39;49m')
 Redis:del(SshId.."Info:Redis:User")
 Redis:set(SshId.."Info:Redis:User",UserSudo)
 else
-print('\n\27[1;34mلم يتم حفظ يوزر المطور الاساسي \nDeveloper UserName not saved\n')
+print('\n\27[1;34mلم يتم حفظ معرف المطور الاساسي \nDeveloper UserName not saved\n')
 end 
 os.execute('lua NASA.lua')
 end
@@ -1134,7 +1137,7 @@ data = {
 },
 }
 }
-send(-1001274438207,0,"*🛒 | تم تنصيب بوت علي سورس ناسا\n┄──━━━ ● ━━━──┄\n*⚜️ | يوزر البوت:- @["..botuser.."] *\n*🥇 | يوزر المطور :- "..sudo_state.."*\n*☢️ |  اصبح عدد البوتات علي الصانع الآن : `"..#allb.."` بوت*\n*","md",false, false, false, false, reply_markup)
+send(-1001274438207,0,"*🛒 | تم تنصيب بوت علي سورس هــلال\n┄──━━━ ● ━━━──┄\n*⚜️ | يوزر البوت:- @["..botuser.."] *\n*🥇 | يوزر المطور :- "..sudo_state.."*\n*☢️ |  اصبح عدد البوتات علي الصانع الآن : `"..#allb.."` بوت*\n*","md",false, false, false, false, reply_markup)
 send(msg.chat_id,msg.id,"• تـم حفـظ البيانـات وتشغـيل بوتـك بنجاح ‼️\n\n• يوزر البوت @["..botuser.."] \n• الـمـطـوࢪ "..sudo_state.."\n\n🔰 [.َ ‹ 𝙱𝙰𝙽𝙳𝙰 || بـانـدا .𓁷](t.me/Q_o_ll)\n🔰 [ٓٓ˹𝙎𝙤𝙐𝙧𝘾𝙚 𝙉𝙖𝙎𝙖 .⚡ ](t.me/B_O_N_T)","md",true)
 return false 
 end
