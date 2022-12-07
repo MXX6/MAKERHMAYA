@@ -8688,7 +8688,7 @@ end
 
 
 if text== "همسه"  or text == "همسة" then
-return LuaTele.sendText(msg.chat_id,msg.id,"ᥫ᭡اهلا بك عزيزي\nᥫ᭡اكتب معرف البوت ثم الرساله ثم معرف الشخص\nᥫ᭡مثال\n@VIP_ALMANY_BOT بحبك @JY_X6 ")
+return LuaTele.sendText(msg.chat_id,msg.id,"ᥫ᭡اهلا بك عزيزي\nᥫ᭡اكتب معرف البوت ثم الرساله ثم معرف الشخص\nᥫ᭡مثال\n@OcBot بحبك @JY_X6 ")
 end
 
 if text == "غنيلي"  then 
@@ -9113,7 +9113,7 @@ end
 if Redis:get(NASA.."youtube"..msg.sender_id.user_id..msg_chat_id) == "mp3" then
 Redis:del(NASA.."youtube"..msg.sender_id.user_id..msg_chat_id)
 local rep = msg.id/2097152/0.5
-local m = json:decode(https.request("https://api.telegram.org/bot"..Token.."/sendAnimation?chat_id="..msg_chat_id.."&animation=https://t.me/sourcelion1/1222&reply_to_message_id="..rep)).result.message_id
+local m = json:decode(https.request("https://api.telegram.org/bot"..Token.."/sendAnimation?chat_id="..msg_chat_id.."&animation=https://t.me/UY_X6/580&reply_to_message_id="..rep)).result.message_id
 local se = http.request("http://aboelmagd.tk/ban/yotube.php?search="..URL.escape(text))
 local Jbanda = JSON.decode(se)
 local link = Jbanda.results[1].url
@@ -9136,7 +9136,7 @@ os.remove(""..title..".mp3")
 end
 if Redis:get(NASA.."youtube"..msg.sender_id.user_id..msg_chat_id) == "mp4" then
 local rep = msg.id/2097152/0.5
-local m = json:decode(https.request("https://api.telegram.org/bot"..Token.."/sendAnimation?chat_id="..msg_chat_id.."&animation=https://t.me/sourcelion1/1222&reply_to_message_id="..rep)).result.message_id
+local m = json:decode(https.request("https://api.telegram.org/bot"..Token.."/sendAnimation?chat_id="..msg_chat_id.."&animation=https://t.me/UY_X6/580&reply_to_message_id="..rep)).result.message_id
 local se = http.request("http://aboelmagd.tk/ban/yotube.php?search="..URL.escape(text))
 local Jbanda = JSON.decode(se)
 local link = Jbanda.results[1].url
@@ -11011,7 +11011,7 @@ local knez = ballancee + 26000
 Redis:set(NASA.."flos"..msg.sender_id.user_id , knez)
 local ballancee = Redis:get(NASA.."flos"..msg.sender_id.user_id) or 0
 local convert_mony = string.format("%.0f",ballancee)
-LuaTele.sendText(msg.chat_id,msg.id,""..neews.." لقد وجدت كنز\nالكنز : فأس ارطغرل 🪓\nسعره : 26000 جنيه 💵\nرصيدك حاليا : "..convert_mony.." جنيه 💵\n✦","md",true)
+LuaTele.sendText(msg.chat_id,msg.id,""..neews.." لقد وجدت كنز\nالكنز : فأس ارطغرل ??\nسعره : 26000 جنيه 💵\nرصيدك حاليا : "..convert_mony.." جنيه 💵\n✦","md",true)
 Redis:setex(NASA.."yiioooo" .. msg.sender_id.user_id,1800, true)
 elseif Descriptioont == "18" then
 local knez = ballancee + 22000
@@ -16448,7 +16448,7 @@ https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. ms
 end 
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' then
 photo = "https://t.me/sourcelion1/1144"
-local Name = "*WُEُْLُCُOُMُْEْ  ُᦓꪊ᥅ꫀᥴꫀ ꪶﺃꪮꪀ\n┄──━━━ ᥫ᭡ ━━━──┄\n*⚡ › [ᦓꪊ᥅ꫀᥴꫀ ꪶﺃꪮꪀ](http://t.me/sourcelion1)*\n\n*👤 › [𓆩  𝐷𝑒𝑣 𝑆𝑢𝑂𝑟𝐶𝑒 𓆪](https://t.me/lion_dev1)*\n\n*🛒 › [MُْAُRُKُEُْT ُُMُIُLٍُAٍُNٍُO](t.me/Lion_makar_bot)*\n\n*📡 › [𝑇𝑤𝑆𝑜𝐿 𝐿𝑖𝑂𝑛](http://t.me/sourcelion1)*\n┄──━━━ ᥫ᭡ ━━━──┄*"
+local Name = "*WُEُْLُCُOُMُْEْ  ُᦓꪊ᥅ꫀᥴꫀ ꪶﺃꪮꪀ\n┄──━━━ ᥫ᭡ ━━━──┄\n*⚡ › [ᦓꪊ᥅ꫀᥴꫀ ꪶﺃꪮꪀ](http://t.me/sourcelion1)*\n\n*👤 › [𓆩  𝐷𝑒𝑣 𝑆𝑢𝑂𝑟𝐶𝑒 𓆪](https://t.me/lion_dev1)*\n\n*🛒 › [MُْAُRُKُEُْT ُ](t.me/Lion_makar_bot)*\n\n*📡 › [𝑇𝑤𝑆𝑜𝐿 𝐿𝑖𝑂𝑛](http://t.me/sourcelion1)*\n┄──━━━ ᥫ᭡ ━━━──┄*"
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -20341,7 +20341,7 @@ function CallBackLua(data)
 if data and data.luatele and data.luatele == "updateNewInlineQuery" then
 local Text = data.query 
 if Text == '' then
-local input_message_content = {message_text = " ᥫ᭡ اهلا بك عزيزي\n ᥫ᭡ لارسال الهمسه اكتب يوزر البوت + الهمسه + يوزر العضو\n ᥫ᭡ مثال @VIP_ALMANY_BOT هلا @JY_X6"}	
+local input_message_content = {message_text = " ᥫ᭡ اهلا بك عزيزي\n ᥫ᭡ لارسال الهمسه اكتب يوزر البوت + الهمسه + يوزر العضو\n ᥫ᭡ مثال @OcBot هلا @JY_X6"}	
 local resuult = {{
 type = 'article',
 id = math.random(1,64),
