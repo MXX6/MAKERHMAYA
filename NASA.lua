@@ -239,11 +239,11 @@ if Message_Get.forward_info then
 local Info_User = Redis:get(NASA.."Twasl:UserId"..Message_Get.forward_info.date) or 5239775356
 if text == 'حظر' then
 Redis:sadd(NASA..'BaN:In:Tuasl',Info_User)  
-return send(msg.chat_id,msg.id,Reply_Status(Info_User,'*عـزيـزي الـمـطـور  تم حظره من الـصانـع بنجاح .*').Reply,"md",true)  
+return send(msg.chat_id,msg.id,Reply_Status(Info_User,'*عـزيـزي الـمـطـور ايـطالي تم حظره من الـصانـع بنجاح .*').Reply,"md",true)  
 end 
 if text =='الغاء الحظر' or text =='الغاء حظر' then
 Redis:srem(NASA..'BaN:In:Tuasl',Info_User)  
-return send(msg.chat_id,msg.id,Reply_Status(Info_User,'*عـزيـزي الـمـطـور  تم الـغاء حظره من الـصانـع بنجاح .*').Reply,"md",true)  
+return send(msg.chat_id,msg.id,Reply_Status(Info_User,'*عـزيـزي الـمـطـور ايـطالي تم الـغاء حظره من الـصانـع بنجاح .*').Reply,"md",true)  
 end 
 end
 end
@@ -297,7 +297,7 @@ data = {
 },
 }
 }
-send(msg.chat_id,msg.id,"*◍ اهلاً بك عـزيـري الـمـطور * \n","md",true, false, false, true, reply_markup)
+send(msg.chat_id,msg.id,"*◍ اهلاً بك عـزيـري الـمـطور ايـطالي* \n","md",true, false, false, true, reply_markup)
 return false 
 end
 if text == "⏺️ | قسم الاذاعه" then 
@@ -320,7 +320,7 @@ data = {
 },
 }
 }
-send(msg.chat_id,msg.id,"*◍ اهلاً بك عـزيـري الـمـطور * \n","md",true, false, false, true, reply_markup)
+send(msg.chat_id,msg.id,"*◍ اهلاً بك عـزيـري الـمـطور ايـطالي* \n","md",true, false, false, true, reply_markup)
 return false 
 end
 if text == "⏺️ | قسم المصنع" then 
@@ -340,7 +340,7 @@ data = {
 },
 }
 }
-send(msg.chat_id,msg.id,"*◍ اهلاً بك عـزيـري الـمـطور * \n","md",true, false, false, true, reply_markup)
+send(msg.chat_id,msg.id,"*◍ اهلاً بك عـزيـري الـمـطور ايـطالي* \n","md",true, false, false, true, reply_markup)
 return false 
 end
 if text == "⏺️ | قسم التفعيل" then 
@@ -363,7 +363,7 @@ data = {
 },
 }
 }
-send(msg.chat_id,msg.id,"*◍ اهلاً بك عـزيـري الـمـطور * \n","md",true, false, false, true, reply_markup)
+send(msg.chat_id,msg.id,"*◍ اهلاً بك عـزيـري الـمـطور ايـطالي* \n","md",true, false, false, true, reply_markup)
 return false 
 end
 
@@ -1030,10 +1030,10 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '👤 | مبرمجين السورس', url = 't.me/lion_dev1'}, 
+{text = '👤 | مبرمج السورس', url = 't.me/JY_X6'}, 
 },
 {
-{text = '🔘 | تواصل معنا', url = 't.me/NettChat'}, 
+{text = '🔘 | تواصل معنا', url = 't.me/U_0Ol'}, 
 },
 }
 }
@@ -1047,9 +1047,7 @@ LuaTele.sendText(Sudo_Id,0,'*\n• تم دخول شخص جديد الي البو
 end
 local news =[[
 ⚡مرحبا اليك صانع الحماية 🚀
-⚡قناة التحديثات (@sourcelion1) 🚀
-⚡جروب السورس  (@NettChat) 🚀
-⚡ مطورين السورس (@lion_dev1) 🚀 
+
 ]]
 reply_markup = LuaTele.replyMarkup{type = 'keyboard',resize = true,is_personal = true,
 data = {
@@ -1126,18 +1124,18 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '👤 | مبرمجين السورس', url = 't.me/lion_dev1'}, 
+{text = '👤 | مبرمج السورس', url = 't.me/JY_X6'}, 
 },
 {
-{text = '☢️ | اضغط هنا لتنصيب', url = 't.me/Lion_makar_bot'}, 
+{text = '☢️ | اضغط هنا لتنصيب', url = 't.me/sophia_egy_bot'}, 
 },
 {
-{text = '🔘 | تواصل معنا', url = 't.me/lion_dev1'}, 
+{text = '🔘 | تواصل معنا', url = 't.me/U_0Ol'}, 
 },
 }
 }
-send(-1001537853008,0,"*🛒 | تم تنصيب بوت علي سورس اسد\n┄──━━━ ● ━━━──┄\n*⚜️ | يوزر البوت:- @["..botuser.."] *\n*🥇 | يوزر المطور :- "..sudo_state.."*\n*☢️ |  اصبح عدد البوتات علي الصانع الآن : `"..#allb.."` بوت*\n*","md",false, false, false, false, reply_markup)
-send(msg.chat_id,msg.id,"• تـم حفـظ البيانـات وتشغـيل بوتـك بنجاح ‼️\n\n• يوزر البوت @["..botuser.."] \n• الـمـطـوࢪ "..sudo_state.."\n\n🔰 [𓆩 مـ ـطـ ـورين الـ ـسـ ـورس 𓆪](t.me/lion_dev1)\n🔰 [քօst օʀ stօʀɛ 💞 ](t.me/sourcelion1)","md",true)
+send(-1001537853008,0,"*🛒 | تم تنصيب بوت علي سورس \n┄──━━━ ● ━━━──┄\n*⚜️ | يوزر البوت:- @["..botuser.."] *\n*🥇 | يوزر المطور :- "..sudo_state.."*\n*☢️ |  اصبح عدد البوتات علي الصانع الآن : `"..#allb.."` بوت*\n*","md",false, false, false, false, reply_markup)
+send(msg.chat_id,msg.id,"• تـم حفـظ البيانـات وتشغـيل بوتـك بنجاح ‼️\n\n• يوزر البوت @["..botuser.."] \n• الـمـطـوࢪ "..sudo_state.."\n\n🔰 [𓆩 مـ ٰـيـ ٓـدو الـ ـٰمـ ْـزعٰـ ـٰج 𓆪](t.me/JY_X6)\n🔰 [քօst օʀ stօʀɛ 💞 ](t.me/sourcelion1)","md",true)
 return false 
 end
 send(msg.chat_id,msg.id,"⛔ |  التوكن غير صحيح تأكد منه ثم ارسلة مره اخري ..")
