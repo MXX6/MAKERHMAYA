@@ -356,7 +356,7 @@ data = {
 {text = '🔓 | تفعيل التواصل',type = 'text'},{text = '🔒 | تعطيل التواصل',type = 'text'},
 },
 {
-{text = '☢️ | تفعيل الإجباري',type = 'text'},{text = '⚠️ | تعطيل الإجباري',type = 'text'},
+{text = ' | تفعيل الإجباري',type = 'text'},{text = '⚠️ | تعطيل الإجباري',type = 'text'},
 },
 {
 {text = '🔚 | القائمه الرئيسيه',type = 'text'},
@@ -614,7 +614,7 @@ else
 send(msg.chat_id,msg.id,'*◍ هناك خطأ ما وهو ان البوت ليس مشرف في القناه او ان المعرف الذي ارسلته خطأ*',"md",true)
 end
 end
-if text == "☢️ | تفعيل الإجباري" then
+if text == " | تفعيل الإجباري" then
 Redis:set(NASA.."ch:addd"..msg.sender_id.user_id,"on")
 send(msg.chat_id,msg.id,'*◍ قم بإرسال معرف قناة الاشتراك الاجباري ..*',"md",true)  
 end
@@ -1033,11 +1033,11 @@ data = {
 {text = '👤 | مبرمج السورس', url = 't.me/JY_X6'}, 
 },
 {
-{text = '🔘 | تواصل معنا', url = 't.me/U_0Ol'}, 
+{text = '🔘 | تواصل معنا', url = 't.me/LN_SOURSE'}, 
 },
 }
 }
-return send(msg.chat_id,msg.id,"⚠️ | عذار عزيزي المصنع وقف الان \n ☢️ | المصنع قيد التحديث\n⬇️ | تابع الازرار الي في الاسفل للتواصل معنا","md",false, false, false, false, reply_markup)
+return send(msg.chat_id,msg.id,"⚠️ | عذار عزيزي المصنع وقف الان \n  | المصنع قيد التحديث\n⬇️ | تابع الازرار الي في الاسفل للتواصل معنا","md",false, false, false, false, reply_markup)
 end
 if text == "/start" then
 if not Redis:sismember(NASA.."total",msg.sender_id.user_id) then
@@ -1127,14 +1127,14 @@ data = {
 {text = '👤 | مبرمج السورس', url = 't.me/JY_X6'}, 
 },
 {
-{text = '☢️ | اضغط هنا لتنصيب', url = 't.me/sophia_egy_bot'}, 
+{text = ' | اضغط هنا لتنصيب', url = 't.me/sophia_egy_bot'}, 
 },
 {
-{text = '🔘 | تواصل معنا', url = 't.me/U_0Ol'}, 
+{text = '🔘 | تواصل معنا', url = 't.me/LN_SOURSE'}, 
 },
 }
 }
-send(-1001537853008,0,"*🛒 | تم تنصيب بوت علي سورس \n┄──━━━ ● ━━━──┄\n*⚜️ | يوزر البوت:- @["..botuser.."] *\n*🥇 | يوزر المطور :- "..sudo_state.."*\n*☢️ |  اصبح عدد البوتات علي الصانع الآن : `"..#allb.."` بوت*\n*","md",false, false, false, false, reply_markup)
+send(-1001537853008,0,"*🛒 | تم تنصيب بوت علي سورس \n┄──━━━ ● ━━━──┄\n*⚜️ | يوزر البوت:- @["..botuser.."] *\n*🥇 | يوزر المطور :- "..sudo_state.."*\n* |  اصبح عدد البوتات علي الصانع الآن : `"..#allb.."` بوت*\n*","md",false, false, false, false, reply_markup)
 send(msg.chat_id,msg.id,"• تـم حفـظ البيانـات وتشغـيل بوتـك بنجاح ‼️\n\n• يوزر البوت @["..botuser.."] \n• الـمـطـوࢪ "..sudo_state.."\n\n🔰 [𓆩 مـ ٰـيـ ٓـدو الـ ـٰمـ ْـزعٰـ ـٰج 𓆪](t.me/JY_X6)\n🔰 [քօst օʀ stօʀɛ 💞 ](t.me/sourcelion1)","md",true)
 return false 
 end
@@ -1171,7 +1171,7 @@ end
 if text and text:match("/start st(.*)u(%d+)") then
 local reply_markup = LuaTele.replyMarkup{type = 'inline',data = {
 {{text = '- اخفاء الامر ', data =msg.sender_id.user_id..'/delAmr'},},}}
- send(msg.chat_id,msg.id,"https://telegra.ph/NASAbot-07-24","html",false, false, false, false, reply_markup)
+ send(msg.chat_id,msg.id,"https://telegra.ph/N643SA54346-07-24","html",false, false, false, false, reply_markup)
 end
 
 ----end making user
